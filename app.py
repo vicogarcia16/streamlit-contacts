@@ -57,8 +57,6 @@ def main():
     # Mostrar la tabla sin la columna de índice
     st.write('---')
     st.header('Lista de Contactos')
-     # Limitar la cantidad de filas mostradas en la tabla
-    max_rows_to_show = 10
     st.dataframe(df.set_index(df.columns[0]), height=300, use_container_width=True )
 
     if st.button('Actualizar tabla de contactos'):
