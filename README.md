@@ -8,7 +8,13 @@ Aplicación de Contactos
     - <code>pipenv shell</code>
 2. Instalar las librerias necesarias.
     - <code>pipenv install --ignore-pipfile</code>
-4. Ejecutar el archivo python.
+3. Realizar archivo .env con lo siguiente:
+    * USER='tu_user'
+    * PASSWORD='tu_pass'
+    * HOST='tu_host' --- *Si utilizas Docker, poner el host como nombraste el servicio de BD en docker-compose.yaml*
+    * PORT='tu_puerto'
+    * DATABASE='tu_base_datos'
+5. Ejecutar el archivo python.
     - <code>pipenv run contacts</code>
 
 #### Construido con 🛠️
